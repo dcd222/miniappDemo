@@ -3,6 +3,7 @@ import { Button, Text, View } from '@tarojs/components';
 import DialogManager from "pcComponents/dialogManager";
 import { events } from "mapp_common/utils/eventManager";
 import RefundManagement from "../refundManagement";
+import ItemChoose from "../itemChoose";
 import Marketing from "mapp_common/marketing";
 import { MARKETING_TYPE, PC_COMMON_MARKETING_MASK } from "tradePublic/marketing/constants";
 import { showModalVIP } from "mapp_common/marketing/utils/biz";
@@ -14,6 +15,7 @@ import showDialog from "pcComponents/dialogManager/api";
 import { contactCustomerService } from "mapp_common/utils/openChat";
 import { Logger } from "mapp_common/utils/logger";
 import './index.scss';
+import getOnSaleBabyList from 'tradePublic/intercept/index.js'
 import Test from "pcPages/test";
 
 class Index extends Component {
@@ -60,6 +62,15 @@ class Index extends Component {
     }
 
     componentDidMount () {
+
+        getOnSaleBabyList({
+            fields:"title,price",
+
+            callback:rsp =>{
+                console.log('================')
+                console.log(rsp)
+            }
+        })
     }
 
     componentWillUnmount () { }
@@ -225,6 +236,7 @@ class Index extends Component {
                                 <View slot='tradeList'>紧张施工中...</View>
                                 <View slot='refundManagement'><RefundManagement /></View>
                                 <View slot='test'><Test /></View>
+                                <View slot='itemChoose'><ItemChoose /></View>
                             </router-view>
 
                         </View>

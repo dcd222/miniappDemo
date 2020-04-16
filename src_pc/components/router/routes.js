@@ -11,8 +11,17 @@ export const routes = [
                 path: '/refundManagement',
                 icon: 'iconfont-tuikuanguanli',
 
+            },
+            {
+                name: '宝贝选择',
+                default: false,
+                component: 'itemChoose',
+                path: '/itemChoose',
+                icon: 'iconfont-tuikuanguanli',
+
             }
         ],
     }
+    
 ];
 export const defaultPath = '/tradeManagement/refundManagement';

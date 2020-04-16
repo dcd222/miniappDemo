@@ -1,0 +1,55 @@
+<template name="renderClassList">
+    <block>
+        <option a:for="{{data}}" a:for-item="item" a:for-index="_anonIdx2">{{item.name}}</option>
+    </block>
+</template>
+<block a:if="{{$taroCompReady}}">
+    <view className="itemChoose">
+        <view className="search">
+            <select className="select" onChange="anonymousFunc0" onBlur="onBlur" defaultValue="出售中">
+                <option value="onsale">出售中</option>
+                <option value="wherehouse">仓库中</option>
+                <option value="sellOut">已售完</option>
+            </select>
+            <select className="select" onChange="anonymousFunc1" onBlur="onBlur" defaultValue="全部分类">
+                <option value="all">全部分类</option>
+                <template is="renderClassList" data="{{...anonymousState__temp}}"></template>
+            </select>
+            <template is="renderClassList" data="{{...anonymousState__temp2}}"></template>
+            <select className="keyword" onChange="anonymousFunc2" onBlur="onBlur" defaultValue="宝贝关键字">
+                <option value="keyword">宝贝关键字</option>
+                <option value="itemId">商品编号</option>
+            </select>
+            <view className="input">
+                <input class="inputContent" type="text" onChange="anonymousFunc3" placeholder="请输入搜索内容" />
+                <icon class="icon" type="search"></icon>
+            </view>
+            <button className="button" onClick="anonymousFunc4">搜索</button>
+        </view>
+        <view className="list">
+            <view className="head">
+                <view className="check">
+                    <checkbox class="all">全选</checkbox>
+                </view>
+                <view className="name">宝贝信息</view>
+                <view className="price">价格</view>
+                <view className="num">库存</view>
+                <view className="sell">销量</view>
+            </view>
+            <view className="body">
+                <view className="column" a:for="{{loopArray83}}" a:for-item="item" a:for-index="_anonIdx4">
+                    <view className="check">
+                        <checkbox class="listCheck"></checkbox>
+                    </view>
+                    <view className="name">
+                        <image className="img" src="{{item.$loopState__temp4}}" lazy-load="{{true}}"></image>
+                        <view className="text">{{item.$original.title}}</view>
+                    </view>
+                    <view className="price">{{item.$original.price}}</view>
+                    <view className="num">{{item.$original.num}}</view>
+                    <view className="sell">{{item.$original.sold_quantity}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

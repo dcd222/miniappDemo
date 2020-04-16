@@ -1,0 +1,36 @@
+
+.tab-con {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.trade-tab {
+  width: auto !important;
+  color: #666666;
+  height: 43px;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: visible;
+  cursor: pointer; }
+  .trade-tab .at-tabs__item {
+    height: 43px;
+    padding: 0 16px !important;
+    border-bottom: 1.5px solid #d8d8d8;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 14px;
+    background-color: #F0F2F5; }
+  .trade-tab .at-tabs__item-underline {
+    height: 2px;
+    bottom: 0px;
+    background-color: #1890FF; }
+
+.tab-blank {
+  flex: 1;
+  height: 41px;
+  border-bottom: 1.5px solid #d8d8d8;
+  background-color: #F0F2F5; }
+
+.title {
+  font-size: 20px;
+  color: #333333; }

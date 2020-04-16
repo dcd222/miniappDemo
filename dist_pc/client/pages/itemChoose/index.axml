@@ -1,0 +1,5 @@
+<block a:if="{{$taroCompReady}}">
+    <view><text className="title">宝贝选择</text>
+        <item-choose-content compid="{{$compid__23}}"></item-choose-content>
+    </view>
+</block>

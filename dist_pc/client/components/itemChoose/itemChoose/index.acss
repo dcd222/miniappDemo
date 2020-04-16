@@ -1,0 +1,119 @@
+
+.tab-con {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.trade-tab {
+  width: auto !important;
+  color: #666666;
+  height: 43px;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: visible;
+  cursor: pointer; }
+  .trade-tab .at-tabs__item {
+    height: 43px;
+    padding: 0 16px !important;
+    border-bottom: 1.5px solid #d8d8d8;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 14px;
+    background-color: #F0F2F5; }
+  .trade-tab .at-tabs__item-underline {
+    height: 2px;
+    bottom: 0px;
+    background-color: #1890FF; }
+
+.tab-blank {
+  flex: 1;
+  height: 41px;
+  border-bottom: 1.5px solid #d8d8d8;
+  background-color: #F0F2F5; }
+
+.itemChoose {
+  background-color: #F7F8FA; }
+  .itemChoose .search .select {
+    width: 240px;
+    height: 36px;
+    line-height: 36px;
+    color: #999999;
+    font-size: 12px; }
+    .itemChoose .search .select option {
+      color: #333333; }
+  .itemChoose .search .keyword {
+    width: 110px;
+    color: #333333; }
+  .itemChoose .search .button {
+    width: 60px;
+    height: 36px;
+    line-height: 36px;
+    background: #f0f2f5;
+    color: #333333;
+    font-size: 12px;
+    border-radius: 3px;
+    border: 1px solid #d7dbe0; }
+  .itemChoose .search .input {
+    display: inline-block;
+    position: relative; }
+    .itemChoose .search .input .icon {
+      top: 3px;
+      position: absolute;
+      left: 12px;
+      color: #999999;
+      width: 16px;
+      height: 16px; }
+    .itemChoose .search .input .inputContent {
+      padding-left: 34px; }
+  .itemChoose .list {
+    background-color: #fff; }
+    .itemChoose .list .head {
+      box-sizing: border-box;
+      border-bottom: 1px solid #999999;
+      padding: 26px 24px;
+      padding-bottom: 0;
+      font-size: 14px;
+      color: #999999;
+      display: flex; }
+      .itemChoose .list .head .check {
+        flex: 1; }
+      .itemChoose .list .head .name {
+        flex: 2; }
+      .itemChoose .list .head .price {
+        flex: 1; }
+      .itemChoose .list .head .sell {
+        flex: 1; }
+      .itemChoose .list .head .num {
+        flex: 1; }
+    .itemChoose .list .body .column {
+      box-sizing: border-box;
+      padding: 15px 24px;
+      box-sizing: border-box;
+      height: 90px;
+      font-size: 14px;
+      color: #333333;
+      display: flex;
+      border-bottom: 1px solid #E6E9ED; }
+      .itemChoose .list .body .column .check {
+        flex: 1; }
+      .itemChoose .list .body .column .name {
+        box-sizing: border-box;
+        flex: 2;
+        position: relative; }
+        .itemChoose .list .body .column .name .img {
+          width: 60px;
+          height: 60px;
+          position: absolute;
+          left: 0;
+          top: 0; }
+        .itemChoose .list .body .column .name .text {
+          padding-left: 72px;
+          padding-right: 100px; }
+      .itemChoose .list .body .column .price {
+        flex: 1; }
+      .itemChoose .list .body .column .sell {
+        flex: 1; }
+      .itemChoose .list .body .column .num {
+        flex: 1; }
+    .itemChoose .list .body .column:hover {
+      background-color: #F4F5FA; }

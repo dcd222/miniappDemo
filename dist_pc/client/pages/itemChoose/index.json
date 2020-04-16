@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "item-choose-content": "../../components/itemChoose/itemChoose/index"
+  }
+}
